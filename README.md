@@ -3,6 +3,6 @@
      <title>Image</title>
    </head>
    <body>
-     <img src="logo.png" alt="logo">
+     <img src="public/logo.png" alt="logo">
    </body>
  </html>
