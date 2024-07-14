@@ -1,0 +1,15 @@
+ body
+ {
+    background-color: rgb(19, 18, 18);
+      
+ }
+
+.chatboxbody
+{
+   width: 60%;
+}
+.appbody
+{
+   display: flex;
+   height: 640px;
+}
