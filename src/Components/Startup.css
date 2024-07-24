@@ -1,0 +1,56 @@
+.logincont 
+{
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  margin: 50px;
+  width: 50%;
+  height: 500px;
+  padding: 30px;
+  gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginbut
+{
+    text-align: center;
+    background-color: rgb(5, 144, 26);
+    border-radius: 30px;
+    transition: ease 0.5s;
+
+}
+.loginbut:hover
+{
+    transition: ease 0.5s;
+    background-color: white;
+    border: solid black 1px;
+}
+.logincont img
+{
+    border-radius: 50%;
+    height: 100px;width: 100px;
+}
+
+.startup
+{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+}
+input
+{
+    padding: 20px;
+    width: 30rem;
+    border-radius: 10px;
+    border: 1px solid ;
+}
+

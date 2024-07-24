@@ -1,0 +1,116 @@
+.left img
+{
+    border-radius: 50%;
+    height: 50px;
+   margin: 20px;
+}
+.left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr
+{
+    margin: 0;
+    box-shadow: 0px 0px 10px;
+}
+.body
+{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(14, 6, 79);
+    
+     
+    border-radius: 10px;
+  
+
+}
+.right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.right h1 span
+{
+    color: rgb(235, 46, 4);
+    font-size: 50px;
+
+}
+
+.main
+{
+    background-image: url(/topback.png);
+     
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+ 
+.getstar img
+{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+
+}
+.getstar
+
+{
+    display: flex;
+     
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 50px;
+    height: 70%;
+     color: white;
+     border-radius: 20px;
+     transition: ease 0.5s;
+}
+.getstar:hover
+{
+
+    box-shadow: 0px 0px 50px white;
+    padding: 60px;
+    transition: ease 0.5s;
+
+}
+
+.getstar div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.getbut
+{
+    background-color: rgb(16, 230, 16);
+    width: 10rem;
+    align-items: center;
+    border: solid black 1px;
+    color: black;
+    
+}
+
+.getbut:hover
+{
+transition: ease-out 200ms;
+background-color: rgb(0, 0, 0);
+ color: white;
+ border: 1px solid white;
+  cursor: pointer;
+  
+}
+  
+
