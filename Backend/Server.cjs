@@ -11,7 +11,7 @@ const PORT = 3000;
 require("dotenv").config();
 
 
-const MONGODB_URI="mongodb+srv://Dheena:dheena@cluster0.ser6ewc.mongodb.net/chatogram?retryWrites=true&w=majority&appName=Cluster0"
+const MONGODB_URI=process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
