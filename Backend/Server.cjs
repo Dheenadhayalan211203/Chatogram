@@ -1,5 +1,5 @@
 const express=require('express');
-const express = require("express");
+ 
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -13,41 +13,39 @@ require("dotenv").config();
 
 const MONGODB_URI="mongodb+srv://Dheena:dheena@cluster0.ser6ewc.mongodb.net/chatogram?retryWrites=true&w=majority&appName=Cluster0"
 
-// Connect to MongoDB
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 const userSchema = new mongoose.Schema({
-    mailid:String,
-    password:String,
-    confirmpassword:String,
-    name:String,
-    phone:String
+  mailid:  {type:String,require:true},
+  password: {type:String,require:true},
+  confirmpassword: {type:String,require:true},
+  name: {type:String,require:true},
+  phone: {type:String,require:true}
+});
 
-  });
-  
-  const User = mongoose.model("user", userSchema);
+const User = mongoose.model("User", userSchema);
 
-  app.post("/signup",async (req,res)=>{
-    const mailid=req.body.mailid
-    const password=req.body.mailid
-    const confirmpassword=req.body.confirmpassword
-    const name=req.body.name
-    const phone=req.body.phone
-    const user=new User({mailid,password,confirmpassword,name,phone})
-    const usern=await User.findOne({mailid:mailid})
-    if(usern){
-        res.send("user already exists")
-    }
-    else
-    {
-        User.insertOne(user)
+app.post("/signup", async (req, res) => {
+  const { mailid, password, confirmpassword, name, phone } = req.body;
+
+  try {
+    const existingUser = await User.findOne({ mailid });
+    if (existingUser) {
+      return res.status(400).send("User already exists");
     }
 
-  })
+    const user = new User({ mailid, password, confirmpassword, name, phone });
+    await user.save();
 
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
+    res.status(201).send("User created successfully");
+  } catch (error) {
+    res.status(500).send("Error creating user");
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
