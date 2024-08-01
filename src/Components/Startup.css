@@ -25,6 +25,7 @@ form{
     background-color: rgb(5, 144, 26);
     border-radius: 30px;
     transition: ease 0.5s;
+    cursor: pointer;
 
 }
 .loginbut:hover
