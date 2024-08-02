@@ -29,6 +29,11 @@ const Startup = () => {
          
     };
 
+    const handleclick=()=>
+    {
+        navigate('/signup')
+    }
+
     return (
         <div className="startup">
             <section className="logincont">
@@ -40,6 +45,14 @@ const Startup = () => {
                         <h3>Login</h3>
                     </button>
                 </form>
+
+                <div className="signup">
+                    <p>Don't have an account?</p>
+                       
+                       <div className="sucon">
+                       <a href="/signup">Signup</a> 
+                       </div>
+                </div>
                   
                      
             </section>

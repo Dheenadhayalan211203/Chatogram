@@ -55,3 +55,15 @@ input
     border: 1px solid ;
 }
 
+.signup
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sucon
+{
+    display: flex;
+    justify-content: center;
+}
+
