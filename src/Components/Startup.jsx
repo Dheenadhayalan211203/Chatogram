@@ -29,10 +29,7 @@ const Startup = () => {
          
     };
 
-    const handleclick=()=>
-    {
-        navigate('/signup')
-    }
+     
 
     return (
         <div className="startup">

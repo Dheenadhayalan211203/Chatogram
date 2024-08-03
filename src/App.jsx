@@ -6,6 +6,9 @@ import Landingpage from './Components/Landingpage';
 import Startup from './Components/Startup';
  
 import Signup from './Components/Signup';
+import Header from './Components/Header';
+ 
+ 
  
 
 function App() {
@@ -16,6 +19,8 @@ function App() {
          
         <Route path='/auth' element={<Startup/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route> 
+        <Route path='header' element={<Header/>}></Route>
+         
          
  
       </Routes>

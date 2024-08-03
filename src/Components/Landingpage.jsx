@@ -1,3 +1,4 @@
+import Header from "./Header";
 import "./Landingpage.css"
 import { Navigate, useNavigate } from "react-router-dom"
 const Landingpage=()=>{
@@ -8,15 +9,7 @@ const Landingpage=()=>{
     }
     return(
         <>
-           <section className="body">
-            <div className="left">
-                <img src="logo.jpg" alt="" />
-            </div>
-            <div className="right">
-                <h1><span>C</span>hatogram</h1>
-            </div>
-           </section>
-           <hr />
+            <Header/>
            <section className="main">
                            <div className="getstar">
                             <div><img src="logo.png" alt="" /></div>
