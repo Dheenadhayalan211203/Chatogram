@@ -1,0 +1,42 @@
+.dashcont
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     
+
+
+}
+.chatcardcont
+{
+    border:solid black 1px;
+    max-width: 50%;
+    
+}
+.daashboard
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chatboxcont
+{
+    border:solid black 1px
+}
+.prof img
+
+{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chatcard
+{
+    display: flex;
+    gap: 10px;
+}
+
+.left
+{
+    display: flex;
+}

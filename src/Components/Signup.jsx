@@ -58,7 +58,7 @@ const Signup=()=>{
                      </div>
                        
                        <div className="sucon">
-                       <a href="/auth">Signup</a> 
+                       <a href="/auth">Login</a> 
                        </div>
                 </div>
 
