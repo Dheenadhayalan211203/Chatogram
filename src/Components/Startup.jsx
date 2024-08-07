@@ -6,6 +6,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 const Startup = () => {
     const [mailid, setEmail] = useState();
     const [password, setPassword] = useState();
+    const [logstatus,setlogstatus] =useState(false)
     const navigate=useNavigate();
      
 
@@ -18,8 +19,10 @@ const Startup = () => {
          
         try {
             const response = await axios.post("https://chatogram-backend-1.onrender.com/login", loginData);
-            console.log(loginData)
-            console.log(response.data);
+              
+
+             response.data.islogin? navigate('/dashboard',<mailid/>) :navigate('/signup')
+            
              
             
         } catch (error) {
