@@ -1,10 +1,10 @@
 <html>
   <div style="display:flex; justify-content: center;">
-           <img src="public/logo.png">
-           <img src="public/op1.png">
-           <img src="public/op2.png">
-           <img src="public/op3.png">
-           <img src="public/op4.png">
+           <img src="output_img/logo.png">
+           <img src="output_img/op1.png">
+           <img src="output_img/op2.png">
+           <img src="output_img/op3.png">
+           <img src="output_img/op4.png">
     
   </div>
 
