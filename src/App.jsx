@@ -8,6 +8,7 @@ import Startup from './Components/Startup';
 import Signup from './Components/Signup';
  
 import Dashboard from './Components/Dashboard';
+import Usernotfound from './Components/Usernotfound';
  
  
  
@@ -22,6 +23,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}></Route> 
       
         <Route path='dashboard' element={<Dashboard/>}></Route>
+        <Route path='unf' element={< Usernotfound/>}></Route>
          
          
  

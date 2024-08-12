@@ -1,6 +1,7 @@
 import './header.css'
 
-const Header=()=>{
+const Header=(props)=>{
+    
 
     return(
 
@@ -21,7 +22,7 @@ const Header=()=>{
                     <img src="profileph.png" alt="profilepic" />
                 </section>
                 <div className="logtit">
-                    <p>Dheena</p>
+                    <p>{props.name}</p>
                 </div>
             </div>
         </section>

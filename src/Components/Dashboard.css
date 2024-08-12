@@ -3,15 +3,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+     
      
 
 
 }
 .chatcardcont
 {
-    border:solid black 1px;
-    max-width: 50%;
+   
+    height: 555px;
+    width: 495px;
+    box-shadow: black 0px 0px 5px;
+    background-color: rgb(231, 231, 247);
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    scroll-behavior:smooth;
     
+    
+    
+}
+
+.chatboxcont
+{
+     
+    height: 555px;
+    width: 950px;
+    box-shadow: black 0px 0px 5px;
+     
 }
 .daashboard
 {
@@ -19,10 +38,7 @@
     flex-direction: column;
     gap: 20px;
 }
-.chatboxcont
-{
-    border:solid black 1px
-}
+ 
 .prof img
 
 {
@@ -34,9 +50,170 @@
 {
     display: flex;
     gap: 10px;
+     
+    margin: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 5px;
+    background-color: white;
+    
 }
 
-.left
+ 
+
+.details
+{
+    display: flex;  
+    
+    flex-direction: column;
+     
+}
+
+.mscont
 {
     display: flex;
+    justify-content: center;
+    background-color: green;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    color: white;
+}
+
+.prof
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.frname
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.time
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.time p{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+.containercont
+{
+    height: 1080px;
+    width: 1920px;
+}
+
+
+.head
+{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 10px;
+}
+
+.head img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chatbodyyy
+{
+    border: 1px solid black;
+    height: 390px;
+    background-image: url(/public/chatboxbkimg.jpg);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}
+
+.searchbar
+{
+   
+    padding: 10px;
+     background-color: rgb(44, 43, 43);
+     
+}
+
+.searchbar input{
+    width: 750px;
+    background-color: rgb(230, 227, 227);
+}
+
+.searchbar input:hover
+{
+    background-color: white;
+}
+
+.sendd
+{
+    height: 50px;
+    width: 30px;
+}
+
+button
+{
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.frmm{
+    display: flex;
+    flex-direction: row;
+}
+
+.sender
+{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    background-color: rgb(13, 3, 69);
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.reciver
+{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    background-color: rgb(128, 36, 36);
+    color: white;
+    border-radius: 20px;
+    
+}
+
+
+.reciver p{
+    padding: 10px;
+}
+
+.sender p{
+    padding: 10px;
+}
+.snd{
+
+    display: flex;
+    justify-content: start;
+
+}
+
+.rcv{
+
+    display: flex;
+    justify-content: end;
+
 }

@@ -1,0 +1,16 @@
+.notcont
+{
+    display: flex;
+    justify-content: center;
+}
+
+.mes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mes h3{
+    text-align: center;
+}

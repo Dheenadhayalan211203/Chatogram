@@ -6,13 +6,14 @@ import { Navigate, useNavigate } from "react-router-dom";
 const Startup = () => {
     const [mailid, setEmail] = useState();
     const [password, setPassword] = useState();
-    const [logstatus,setlogstatus] =useState(false)
+    const [clickevent,setclickevent]=useState("");
     const navigate=useNavigate();
      
 
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        setclickevent(<img src="loading.gif" alt="loading..." />)
 
         const loginData = { mailid, password };
          
@@ -21,7 +22,7 @@ const Startup = () => {
             const response = await axios.post("https://chatogram-backend-1.onrender.com/login", loginData);
               
 
-             response.data.islogin? navigate('/dashboard',<mailid/>) :navigate('/signup')
+             response.data.islogin? navigate('/dashboard', ) :navigate('/unf')
             
              
             
@@ -53,6 +54,15 @@ const Startup = () => {
                        <a href="/signup">Signup</a> 
                        </div>
                 </div>
+
+                <section className="loading">
+
+                    <div className="gif">
+                         {clickevent}
+                        
+                    </div>
+
+                </section>
                   
                      
             </section>
